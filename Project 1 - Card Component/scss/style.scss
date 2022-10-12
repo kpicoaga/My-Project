@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Dark-cyan_2: hsl(158, 29%, 22%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    font-size: 14px;
+    height:1440px;
+    width:800px;
+    background-color:var(--Cream) ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    font-family: 'Montserrat', sans-serif;
+    margin:auto;
+    
+    
+}
+
+.card{
+    height: 450px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color:var(--White) ;
+    
+    .card_imagen{
+        .card_imagen_perfume{
+            height: 450px;
+            flex:1;
+            width: 100%;
+            border-radius: 10px;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+    
+    }
+    .card_texto{
+        flex:1;
+        width:100%;
+        padding: 0 0 0 35px;
+            .card_texto_top{
+                color: var(--Dark-grayish-blue);
+                padding: 31px 0 24px 0 ;
+            }
+            .card_texto_title{
+                font-family: 'Fraunces', serif;
+                line-height: 30px;
+                color: var (--Cream);
+                width: 200px;
+                padding: 0 0 22px 0 ;
+                font-size: 30px;
+            }
+            .card_texto_parrafo{
+                color: var(--Dark-grayish-blue);
+                width: 240px;
+                padding: 0 0 27px 0;
+                line-height: 22px;
+            }
+            .card_texto_price{
+                font-family: 'Fraunces', serif;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .card_texto_price_bestprice{
+                    font-size: 35px;
+                    color: var(--Dark-cyan);
+                    padding: 0 25px 0 0 ;
+                }
+                .card_texto_price_fullprice{
+                    color: var(--Dark-grayish-blue);
+                    text-decoration-line: line-through;
+                }
+            }
+            .card_texto_button{
+                padding: 25px 0 0 0;
+                .card_texto_button_b:hover{
+                    background-color: var(--Dark-cyan_2);
+                }
+                .card_texto_button_b{
+                    background-color: var(--Dark-cyan);
+                    width:238px;
+                    height:48px;
+                    border-radius: 10px;
+                    border: none;
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    cursor:pointer;
+                    .card_texto_button_texto{
+                        color:var(--White);
+                        font-weight: 700;
+                        
+                    }
+                    .card_texto_button_icon{
+                        padding: 0 10px 0 0 ;
+                    }
+                    
+                }  
+            }
+    }
+}
+@media (max-width: 600px) {
+    .card{
+        height: 615px;
+        width: 350px;
+
+        flex-direction: column;
+        .card_imagen{
+            .card_imagen_perfume{
+                content: url(/images/image-product-mobile.jpg);
+                height: 240px;
+                border-radius: 10px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+        
+        }
+        .card_texto{
+            padding: 0 0 0 22px;
+                .card_texto_top{
+                    padding: 20px 0 10px 0 ;
+                    letter-spacing: 5px;
+                }
+                .card_texto_title{
+                    padding: 0 0 20px 0 ;
+                    width:280px;
+                    line-height: 30px;
+                    
+                }
+                .card_texto_parrafo{
+                    padding: 0 0 20px 0;
+                    width:290px;
+                    line-height: 22px;
+                    
+                }
+                .card_texto_price{
+                    .card_texto_price_bestprice{
+                        padding: 0 20px 0 0 ;
+                    }
+                }
+                .card_texto_button{
+                    padding: 15px 0 0 0;
+                    .card_texto_button_b{
+                        width:298px;
+                        .card_texto_button_icon{
+                            padding: 0 10px 0 0 ;
+                        }
+                    }  
+                }
+        }
+    }
+}
+
+.attribution {
+    margin: 20px 0 0 0 ;
+    font-size: 11px;
+    text-align: center; 
+    }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
