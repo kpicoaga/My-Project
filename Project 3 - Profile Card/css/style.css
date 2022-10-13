@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--Dark-cyan);
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 146px auto;
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+
+.card {
+  width: 330px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  margin-bottom: 20px;
+}
+.card .card_fondo {
+  height: 140px;
+}
+.card .card_imageprofile .card_imageprofile_top {
+  display: block;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  translate: 0 -50px;
+  left: 35%;
+}
+.card .card_fondo2 {
+  display: flex;
+  flex-direction: column;
+}
+.card .card_fondo2 .card_fondo2_line1 {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.card .card_fondo2 .card_fondo2_line1 .card_fondo2_name {
+  margin: 18px 0 0 0;
+  padding: 0 10px 0 0;
+  font-weight: 700;
+}
+.card .card_fondo2 .card_fondo2_line1 .card_fondo2_age {
+  margin: 18px 0 0 0;
+  color: var(--Dark-grayish-blue);
+}
+.card .card_fondo2 .card_fondo2_line2 {
+  text-align: center;
+}
+.card .card_fondo2 .card_fondo2_line2 .card_fondo2_country {
+  margin: 0;
+  padding: 10px 0 25px 0;
+  font-size: 15px;
+  color: var(--Dark-gray);
+}
+.card .card_stadistics {
+  border-top: 1px solid;
+  display: flex;
+  padding: 0px 5px 0 5px;
+  justify-content: space-around;
+  text-align: center;
+}
+.card .card_stadistics .card_stadistics_box1 .card_stadistics_box1_number {
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+.card .card_stadistics .card_stadistics_box1 .card_stadistics_box1_text {
+  margin-top: 5px;
+  font-size: 13px;
+  color: var(--Dark-gray);
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 350px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */
